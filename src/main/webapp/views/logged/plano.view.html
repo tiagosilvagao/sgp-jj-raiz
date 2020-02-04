@@ -1,0 +1,159 @@
+<h1 class="component-holder text-left h3" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-79762">Plano</h1>
+
+<datasource data-component="crn-datasource" filter="" name="Plano" entity="app2.Plano" keys="id" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nomePlano&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;valorPeriodo&quot;,&quot;type&quot;:&quot;Decimal&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;valorAcrescimoAtraso&quot;,&quot;type&quot;:&quot;Decimal&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;periodicidadeEmMes&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;tpAcrescimoAtraso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;tpAcrescimoAtraso_tipo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition="{&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;nomePlano&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true"></datasource>
+
+        <div ng-hide="Plano.inserting || Plano.editing" data-component="crn-textinput" id="crn-datasource-filter-general79762" class="">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<div ng-hide="Plano.editing || Plano.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid
+            options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;Plano&quot;,&quot;entity&quot;:&quot;app2.Plano&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app2.Plano&quot;,&quot;customId&quot;:&quot;Plano&quot;,&quot;name&quot;:&quot;Plano&quot;,&quot;customQueryName&quot;:&quot;app2.Plano&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app2.entity.Plano&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nomePlano&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;valorPeriodo&quot;,&quot;type&quot;:&quot;Decimal&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;valorAcrescimoAtraso&quot;,&quot;type&quot;:&quot;Decimal&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;periodicidadeEmMes&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;tpAcrescimoAtraso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;tpAcrescimoAtraso_tipo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nomePlano&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;valorPeriodo&quot;,&quot;type&quot;:&quot;Decimal&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;valorAcrescimoAtraso&quot;,&quot;type&quot;:&quot;Decimal&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;periodicidadeEmMes&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;tpAcrescimoAtraso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;tpAcrescimoAtraso_tipo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;app2.Plano&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;nomePlano&quot;,&quot;headerText&quot;:&quot;Plano&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[]}"
+            ng-model="vars.grid79762"
+            class=""
+            style="">
+    </cron-grid>
+</div>
+
+<div data-component="crn-form" id="crn-form-form-Plano-79762">
+    <div class="form" ng-show="Plano.editing || Plano.inserting">
+        <form crn-datasource="Plano" class="">
+            <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+                <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startInserting()"><span class="k-icon k-i-plus"></span></button>
+                <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startEditing()"><span class="k-icon k-i-edit"></span></button>
+                <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasPrevious()" ng-click="datasource.previous()"><span class="k-icon k-i-arrow-chevron-left"></span></button>
+                <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasNext()" ng-click="datasource.next()"><span class="k-icon k-i-arrow-chevron-right"></span></button>
+                <button class="btn btn-danger btn-fab k-button" data-component="crn-button" ng-click="datasource.remove()"><span class="k-icon k-i-close"></span></button>
+            </div>
+            <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+                <button class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="datasource.post()"><span class="k-icon k-i-check"></span></button>
+                <button class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()"><span class="k-icon k-i-cancel"></span></button>
+            </div>
+            <br/>
+            <fieldset ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-nomePlano-79762" class="">
+                        <div class="form-group">
+                                <label for="textinput-nomePlano" class="">Plano</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="Plano.active.nomePlano"
+                                            class="form-control k-textbox"
+                                            id="textinput-nomePlano"
+                                            placeholder="Plano"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-id-79762" class="">
+                        <div class="form-group">
+                                <label for="textinput-id" class="">Id</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="Plano.active.id"
+                                            class="form-control k-textbox"
+                                            id="textinput-id"
+                                            placeholder="Id"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-valorPeriodo-79762" class="">
+                        <div class="form-group">
+                                <label for="textinput-valorPeriodo" class="">Valor Periodo</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="number"
+                                            ng-model="Plano.active.valorPeriodo"
+                                            class="form-control k-textbox"
+                                            id="textinput-valorPeriodo"
+                                            placeholder="Valor Periodo"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-valorAcrescimoAtraso-79762" class="">
+                        <div class="form-group">
+                                <label for="textinput-valorAcrescimoAtraso" class="">Valor Acrescimo Atraso</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="number"
+                                            ng-model="Plano.active.valorAcrescimoAtraso"
+                                            class="form-control k-textbox"
+                                            id="textinput-valorAcrescimoAtraso"
+                                            placeholder="Valor Acrescimo Atraso"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-periodicidadeEmMes-79762" class="">
+                        <div class="form-group">
+                                <label for="textinput-periodicidadeEmMes" class="">Periodicidade Em Mes</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="integer"
+                                            ng-model="Plano.active.periodicidadeEmMes"
+                                            class="form-control k-textbox"
+                                            id="textinput-periodicidadeEmMes"
+                                            placeholder="Periodicidade Em Mes"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+                        <datasource data-component="crn-datasource" name="TpAcrescimoAtrasoCombo" entity="app2.tpAcrescimoAtraso" keys="id" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;tipo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy=true></datasource>
+
+
+                    <div data-component="crn-enterprise-dynamic-combobox" id="crn-enterprise-dynamic-combobox-tpAcrescimoAtraso-79762" class="">
+                        <div class="form-group">
+                                <label for="enterprise-dynamic-combobox-tpAcrescimoAtraso" class="">Tipo Acrescimo Atraso</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <cron-dynamic-select
+                                            
+                                            id="enterprise-dynamic-combobox-tpAcrescimoAtraso"
+                                            name="enterprise-dynamic-combobox-tpAcrescimoAtraso"
+                                            options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;TpAcrescimoAtrasoCombo&quot;,&quot;entity&quot;:&quot;app2.tpAcrescimoAtraso&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app2.tpAcrescimoAtraso&quot;,&quot;customId&quot;:&quot;tpAcrescimoAtraso&quot;,&quot;name&quot;:&quot;TpAcrescimoAtrasoCombo&quot;,&quot;customQueryName&quot;:&quot;app2.tpAcrescimoAtraso&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app2.entity.tpAcrescimoAtraso&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;tipo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;tipo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;app2.tpAcrescimoAtraso&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;tipo&quot;,&quot;dataValueField&quot;:&quot;id&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true,&quot;customTemplate&quot;:false}"
+                                            ng-model="Plano.active.tpAcrescimoAtraso"
+                                            class="crn-select form-control">
+                                    </cron-dynamic-select>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+                <!-- NtoN  -->
+                <!-- NtoN  end-->
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <!-- OneToN -->
+                <!-- OneToOne  end -->
+            </fieldset>
+        </form>
+        &ensp;
+    </div>
+</div>
+
+
